@@ -1,5 +1,5 @@
 import ProductCard from "../ProductCard";
-import flashSaleImage from "@/assest/Banner/flashSale.jpg";
+import flashSaleImage from '@/assest/Banner/flashSale.jpg'
 import Carasoul from "@/components/Shared/Carasoul/Carasoul";
 import { TProduct } from "@/types";
 
@@ -13,6 +13,7 @@ const FlashSale = async () => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
         <div
           style={{
+            backgroundImage: `url(${flashSaleImage.src})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -39,7 +40,7 @@ const FlashSale = async () => {
           </div>
         </div>
         <div className="w-full col-span-full md:col-span-8">
-          <div className="pb-5 -mt-2">
+        <div className="pb-5 -mt-2">
             <h1 className="text-3xl font-semibold">Flash Sale</h1>
           </div>
           <Carasoul>
